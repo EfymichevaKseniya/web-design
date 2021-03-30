@@ -12,30 +12,32 @@
     
 </head>
 <body>
-    <div class="page">
-    <header class="header">
+    <div class="page" id="page">
+    <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
-                <img class="header__img" src="img/header-logo.svg" alt="logo: WD">
+                <a href="#page" class="scroll-link">
+                    <img class="header__img" src="img/header-logo.svg" alt="logo: WD">
+                </a>
             </div>
             
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <div class="menu__btn">
                     <span></span>
                 </div>
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link active">ГЛАВНАЯ</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">ОБ АВТОРЕ</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">РАБОТЫ</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">ПРОЦЕСС</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">КОНТАКТЫ</a></li>
+                    <li class="nav__item"><a href="#page" class="nav__link scroll-link active">ГЛАВНАЯ</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link scroll-link">ОБ АВТОРЕ</a></li>
+                    <li class="nav__item"><a href="#works" class="nav__link scroll-link">РАБОТЫ</a></li>
+                    <li class="nav__item"><a href="#process" class="nav__link scroll-link">ПРОЦЕСС</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link scroll-link">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             
         </div>
 
-        <div class="header-content">
+        <div class="header-content" id="header-content">
             <div class="container">
                 <div class="header-content__inner">
                     <div class="header-content__image">
@@ -55,8 +57,8 @@
     </header>
 
     <!-- Main -->
-    <main class="main">
-        <section class="section">
+    <main class="main" id="main">
+        <section class="section" id="about">
             <div class="container">
                 <div class="section__inner">
                     <h1 class="section__title">Обо мне</h1>
@@ -66,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="about-info">
+            <div class="about-info" >
                 <div class="container">
                     <div class="about-info__inner">
                         <div class="about-info__item">
@@ -127,7 +129,7 @@
                 </div>
             </div> <!--/.about-info-->
 
-            <div class="skills">
+            <div class="skills" id="skills">
                 <div class="container">
                     <div class="skills__info">
                         <div class="skills__info-text">
@@ -151,7 +153,7 @@
             </div>
         </section> <!--/.about-->
         
-        <section class="section --section-gray">
+        <section class="section --section-gray" id="process">
             <div class="container">
                 <div class="section__inner">
                     <h1 class="section__title">Как я работаю</h1>
@@ -168,7 +170,7 @@
             </div>
         </section> <!-- /.work-->
 
-        <div class="works">
+        <div class="works" id="works">
             <div class="works__items">
                 <div class="works__item">
                     <img class="works__img" src="img/work/1.jpg" alt="img: work">
@@ -287,7 +289,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__item">
