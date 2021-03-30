@@ -51,10 +51,12 @@ a {
     list-style: none;
 }
 
+
 .nav__list {
     display: flex;
 
 }
+
 
 .nav__link {
     padding-left: 42px;
@@ -72,9 +74,7 @@ a {
     color: #34547A;
 }
 
-.active {
-    color: #34547A;
-}
+
 
 /* Header-content */
 
@@ -450,13 +450,6 @@ a {
 }
 
 
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
 
 @media (max-width: 1200px) {
     .header__inner {
@@ -594,6 +587,7 @@ a {
     }
 
     .nav__list {
+        display: none;
         padding-left: 0;
         width: 100%;
         flex-direction: column;
@@ -628,7 +622,7 @@ a {
     
     .skills__name::before,
     .skills__name::after {
-        left: 10%;
+        left: 20%;
     }
 
     /* Works*/
@@ -671,6 +665,11 @@ a {
         width: 100%;
     }
 
+    .skills__name::before,
+    .skills__name::after {
+        left: 10%;
+    }
+
     .skills__name::before {
         width: 80%;
     }
@@ -702,4 +701,31 @@ a {
     .video {
         display: none;
     }
+}
+
+.active {
+    color: #963960;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fixed {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+
+    z-index: 100;
 }
