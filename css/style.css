@@ -591,8 +591,9 @@ a {
         padding-left: 0;
         width: 100%;
         flex-direction: column;
-        
-        background: #34547A;
+
+        background: #fff;
+
         position: absolute;
         top: 15%;
         left: 0;
@@ -604,10 +605,7 @@ a {
         text-align: center;
     }
 
-    .nav__link {
-        color: #fff;
-
-    }
+   
 
     .header-content__title {
         font-size: 30px;
@@ -704,7 +702,7 @@ a {
 }
 
 .active {
-    color: #963960;
+    color: #182da3;
 }
 
 .show {
