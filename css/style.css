@@ -247,12 +247,13 @@ a {
     height: 450px;
 }
 
-.video {
-    width: 100%;
-    max-width: 900px;
-    height: 600px;
-    margin: auto;
-    padding-top: 20px;
+.work__popup-play {
+    background: url("../img/work/poster.jpg") no-repeat top center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*  Work */
