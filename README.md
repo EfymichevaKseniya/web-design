@@ -1,5 +1,5 @@
 ## Сайт для портфолио веб-дизайнера
-https://reniary.github.io/web_design
+https://reniary.github.io/web-design
 ### Используемые технологии:
 
 - HTML,
