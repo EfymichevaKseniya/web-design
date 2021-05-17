@@ -1,8 +1,9 @@
+
 const burger = document.querySelector('.menu__btn');
 const navList = document.querySelector('.nav__list');
 const navLink = document.querySelectorAll('.nav__link');
-const header = document.querySelector('.nav');
-const headerHeight = header.offsetTop;
+const nav = document.querySelector('.header__inner');
+const navHeight = nav.offsetTop;
 
 
 function mobileMenu() {
@@ -10,9 +11,16 @@ function mobileMenu() {
         e.preventDefault();
     
         navList.classList.toggle('show');
-        
     });
+
+    navLink.forEach(link => {
+        link.addEventListener('click', () => {
+        navList.classList.remove('show');
+    });
+});
 }
+
+
 
 
 function activeLink() {
@@ -20,8 +28,8 @@ function activeLink() {
         item.addEventListener('click', function() {
             for (let i = 0; i < navLink.length; i++) {
                 navLink[i].classList.remove('active'); 
-              }
-              this.classList.add('active');
+            }
+            this.classList.add('active');
         });
     });
 }
@@ -46,10 +54,10 @@ function menuFixed() {
     window.addEventListener('scroll', (e) => {
         e.preventDefault();
     
-        if (window.scrollY >= headerHeight) {
-            header.classList.add('fixed');
+        if (window.scrollY > navHeight) {
+            nav.classList.add('fixed');
         } else {
-            header.classList.remove('fixed');
+            nav.classList.remove('fixed');
         }
     });
 }
@@ -59,3 +67,7 @@ mobileMenu();
 activeLink();
 smoothScroll();
 menuFixed();
+
+
+
+

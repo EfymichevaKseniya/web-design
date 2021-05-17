@@ -124,6 +124,10 @@ a {
     height: 50px;
 }
 
+.btn:hover {
+    background-color: #4a7fbe;
+}
+
 .header-content__btn:hover {
     background: #253d5a;
 }
@@ -247,13 +251,12 @@ a {
     height: 450px;
 }
 
-.work__popup-play {
-    background: url("../img/work/poster.jpg") no-repeat top center;
-    background-size: cover;
-    min-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.video {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    margin: auto;
+    padding-top: 20px;
 }
 
 /*  Work */
@@ -413,49 +416,47 @@ a {
 
 /* burger */ 
 .menu__btn {
+    padding-top: 15px;
     display: none;
     width: 30px;
-    height: 20px;
-    position: absolute;
-    top: 10%;
-    right: 10%;
-
+    height: 40px;
+    cursor: pointer;
 }
 
 
 .menu__btn span {
+    display: block;
     width: 100%;
     height: 2px;
 
     background-color: #000;
-
-    position: absolute;
-    top: 9px;
+    position: relative;
 }
 
-.menu__btn::after, 
-.menu__btn::before {
+.menu__btn span::after, 
+.menu__btn span::before {
     content: "";
     width: 100%;
     height: 2px;
+
     background-color: #000;
+
     position: absolute;
+    right: 0;
 }
 
-.menu__btn::before {
-    top: 0;
+.menu__btn span::before {
+    top: -9px;
 }
 
-.menu__btn::after {
-    bottom: 0;
+.menu__btn span::after {
+    bottom: -9px;
 }
 
 
 
 @media (max-width: 1200px) {
-    .header__inner {
-        justify-content: center;
-    }
+    
     .header-content__inner {
         justify-content: center;
     }
@@ -555,12 +556,6 @@ a {
 }
 
 @media (max-width: 970px) {
-    .header {
-        min-height: 0;
-    }
-    .header__logo {
-        display: none;
-    }
 
     .header__inner {
         margin-bottom: 100px;
@@ -582,31 +577,36 @@ a {
 }
 
 @media (max-width: 776px) {
-
+    .header__inner {
+        padding: 20px 120px;
+    }
+    .header__inner {
+        position: relative;
+    }
     .menu__btn {
         display: block;
     }
 
     .nav__list {
-        display: none;
+        display: block;
         padding-left: 0;
         width: 100%;
-        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
 
         background: #fff;
 
         position: absolute;
-        top: 15%;
-        left: 0;
+        top: 60%;
+        right: 0;
+
+        transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
     }
     
     .nav__item {
-        margin: 10px;
-        padding: 10px auto;
+        padding: 15px 20px;
         text-align: center;
     }
-
-   
 
     .header-content__title {
         font-size: 30px;
@@ -707,7 +707,8 @@ a {
 }
 
 .show {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .hide {
@@ -715,16 +716,17 @@ a {
 }
 
 .fixed {
-    display: flex;
-    justify-content: center;
+    padding: 10px 120px;
     width: 100%;
-    background: #fff;
+    height: 70px;
+    background: #fff; 
 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
 
     position: fixed;
     top: 0;
     left: 0;
-  
 
-    z-index: 100;
+    z-index: 10;
 }
+

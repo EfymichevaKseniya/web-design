@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     
 </head>
@@ -32,7 +31,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link scroll-link">ОБ АВТОРЕ</a></li>
                     <li class="nav__item"><a href="#works" class="nav__link scroll-link">РАБОТЫ</a></li>
                     <li class="nav__item"><a href="#process" class="nav__link scroll-link">ПРОЦЕСС</a></li>
-                    <li class="nav__item"><a href="#footer" class="nav__link scroll-link">КОНТАКТЫ</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link scroll-link">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             
@@ -161,9 +160,12 @@
                     <p class="section__text">
                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     </p>
-                    <a class="work__popup-play"  href="https://youtu.be/JXJNTcpMfdM" data-fancybox="poster">
-                        <img class="work__popup-imgbtn" src="img/work/play.svg" alt="button: play" />
-                    </a>
+                    <iframe class="video"
+                    src="https://www.youtube.com/embed/JXJNTcpMfdM"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </section> <!-- /.work-->
@@ -260,7 +262,7 @@
         </div>
 
         <!-- Order -->
-        <section class="section --section-gray">
+        <section class="section --section-gray" id="contacts">
             <div class="container">
                 <div class="section__inner">
                     <h1 class="section__title">Хотите веб-сайт?</h1>
@@ -311,8 +313,6 @@
     </footer>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
  <script src="js/main.js"></script>   
 </body>
 </html>
